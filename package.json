@@ -7,6 +7,7 @@
     "client": "npm start --prefix client",
     "server": "npm run start --prefix server",
     "watch": "npm run client & npm run server",
+    "deploy": "npm run build --prefix client & npm start --prefix server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
