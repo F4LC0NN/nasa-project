@@ -16,4 +16,8 @@ app.use(express.static(path.join(__dirname, '..', 'build')));
 app.use('/planets', planetsRouter);
 app.use('/launches', launchesRouter);
 
+app.get('/*', (req, res) => {
+  res.sendFile(__dirname, '..', 'build', 'index.html');
+});
+
 module.exports = app;
