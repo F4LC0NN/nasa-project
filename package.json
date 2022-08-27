@@ -1,0 +1,23 @@
+{
+  "name": "nasa-project",
+  "version": "1.0.0",
+  "description": "This project is a fullstack nodeJS project",
+  "main": "index.js",
+  "scripts": {
+    "client": "npm start --prefix client",
+    "server": "npm run start --prefix server",
+    "watch": "npm run client & npm run server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/F4LC0NN/nasa-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/F4LC0NN/nasa-project/issues"
+  },
+  "homepage": "https://github.com/F4LC0NN/nasa-project#readme"
+}

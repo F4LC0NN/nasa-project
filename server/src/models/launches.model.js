@@ -18,5 +18,5 @@ function getAllLaunches() {
 }
 
 module.exports = {
-  getAllLaunches
+  getAllLaunches,
 }
