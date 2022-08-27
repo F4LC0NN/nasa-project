@@ -17,7 +17,7 @@ app.use('/planets', planetsRouter);
 app.use('/launches', launchesRouter);
 
 app.get('/*', (req, res) => {
-  res.sendFile(__dirname, '..', 'build', 'index.html');
+  res.sendFile(path.join(__dirname, '..', 'build', 'index.html'));
 });
 
 module.exports = app;
