@@ -11,9 +11,9 @@ app.use(cors({
   origin: 'http://localhost:3000',
 }));
 app.use(express.json());
-app.use(express.static(path.join(__dirname, '..', 'public')));
+app.use(express.static(path.join(__dirname, '..', 'build')));
 
-app.use(planetsRouter);
-app.use(launchesRouter);
+app.use('/planets', planetsRouter);
+app.use('/launches', launchesRouter);
 
 module.exports = app;
