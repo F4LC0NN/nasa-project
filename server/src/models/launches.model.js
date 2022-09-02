@@ -1,7 +1,7 @@
 const launchesDatabase = require('./launches.mongo');
 const planets = require('./planets.mongo');
 
-const DEFAULT_FILGHT_NUMBER = 100;
+const DEFAULT_FLIGHT_NUMBER = 100;
 
 const launches = new Map();
 
