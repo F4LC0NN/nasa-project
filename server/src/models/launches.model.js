@@ -3,7 +3,7 @@ const planets = require('./planets.mongo');
 
 const DEFAULT_FLIGHT_NUMBER = 100;
 
-const launches = new Map();
+// const launches = new Map();
 
 // let latestFlightNumber = 100;
 
@@ -32,7 +32,7 @@ async function getLatestFlightNumber() {
   .sort('-flightNumber');
 
   if (!latestLaunch) {
-    return DEFAULT_FILGHT_NUMBER;
+    return DEFAULT_FLIGHT_NUMBER;
   }
 
   return latestLaunch.flightNumber;
@@ -44,7 +44,7 @@ async function getAllLaunches() {
 }
 
 async function saveLaunch(launch) {
-  const planet = await planets.find({
+  const planet = await planets.findOne({
     kepler_name: launch.target,
   });
 
