@@ -44,7 +44,7 @@ async function getAllLaunches() {
 }
 
 async function saveLaunch(launch) {
-  const planet = await planets.findOne({
+  const planet = await planets.find({
     kepler_name: launch.target,
   });
 
@@ -52,7 +52,7 @@ async function saveLaunch(launch) {
     throw new Error('No matching planet was found!');
   }
 
-  await launchesDatabase.updateOne({
+  await launchesDatabase.findOneAndUpdate({
     flightNumber: launch.flightNumber,
   }, launch, {
     upsert: true,
