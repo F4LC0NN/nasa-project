@@ -5,10 +5,10 @@ WORKDIR /app
 COPY package*.json ./
 
 COPY client/package*.json client/
-RUN npm install-client --only=production
+RUN npm install --prefix client --only=production
 
 COPY server/package*.json server/
-RUN npm run install-server --only-production
+RUN npm install --prefix server --only-production
 
 COPY client/ client/
 RUN npm run build --prefix client
