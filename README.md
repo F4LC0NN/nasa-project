@@ -1,12 +1,12 @@
 # nasa-project
 
-This project is a fullstack nodeJS web application.
+This project is a fullstack nodeJS web application.<br>
 The idea is to schedule new launches for space exploration.
 
-I followed the MVC model to structure the project.
+I followed the MVC model to structure the project.<br>
 This allowed me to apply separate of concerns.
 
-Visit the final project via this link:
+Visit the final project via this link:<br>
 http://13.38.130.118:8000
 
 ## Front-end
@@ -15,7 +15,7 @@ The front-end is built in ReactJS.
 
 ## Back-end
 
-The back-end is built in NodeJS.
+The back-end is built in NodeJS.<br>
 Here are the other technologies I used:
 
 - ExpressJS for the routing,
@@ -27,7 +27,7 @@ Here are the other technologies I used:
 
 ## Deployment
 
-I used Docker to bundle the web app.
+I used Docker to bundle the web app.<br>
 Then, I deployed it on AWS with EC2.
 
 Thank you for your visit!
